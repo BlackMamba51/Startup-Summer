@@ -3,7 +3,10 @@
 }
 .user-section__body {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  max-width: 100%;
+}
+.user-info {
   max-width: 280px;
 }
 .flex-group {
@@ -50,4 +53,38 @@
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
+}
+.user-repos {
+  width: 850px;
+}
+.repos-count {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.5px;
+}
+.repos-list {
+  width: 100%;
+}
+.repo-item {
+  width: 100%;
+  min-height: 110px;
+  margin-top: 30px;
+  background-color: #FFF;
+  border-radius: 6px;
+  transition: all .5s ease;
+}
+.repo-item:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 4px 10px #0064EB;
+}
+.repo-name {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0064EB;
+  line-height: 29px;
+  padding: 20px;
+}
+.repo-description {
+  font-size: 16px;
+  line-height: 19px;
 }
