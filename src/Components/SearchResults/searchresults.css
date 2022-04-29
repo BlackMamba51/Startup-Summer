@@ -1,0 +1,53 @@
+.user-section {
+  padding-top: 60px;
+}
+.user-section__body {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+}
+.flex-group {
+  display: flex;
+  align-items: center;
+}
+.user-avatar {
+  width: 280px;
+  height: 280px;
+}
+.user-avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.user-name {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.user-login {
+  font-size: 18px;
+  line-height: 22px;
+  color: #0064EB;
+  margin-top: 20px;
+}
+.user-subscribes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.user-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.followers-svg {
+  background-image: url('../../assets/svg/followers.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.following-svg {
+  background-image: url('../../assets/svg/following.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
