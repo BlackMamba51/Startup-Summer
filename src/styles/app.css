@@ -18,8 +18,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 html {
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+.state-text {
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  color: #808080;
+  margin-top: 20px;
 }
