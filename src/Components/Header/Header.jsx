@@ -1,18 +1,7 @@
 import React from "react";
-import { getUser, userInfo } from "../../utils/api";
 import './header.css';
-function Header( {setIsLoading, setIsFind} ) {
+function Header({ search }) {
   
-  async function search(event) {
-    if (event.which === 13) {
-      event.preventDefault();
-      setIsLoading(true);
-      await getUser(event.target.value);
-      setIsLoading(false);
-      console.log(userInfo);
-      setIsFind(true);
-    }
-  }
 
   return (
     <header className="header">
@@ -20,7 +9,7 @@ function Header( {setIsLoading, setIsFind} ) {
         <div className="header__body">
           <div className="github-logo"></div>
           <div className="query-string">
-          <input onKeyPress={search} type="text" className="search-input" placeholder="Enter GitHub username"/>
+          <input onKeyPress={ (e) =>  search(e)} type="text" className="search-input" placeholder="Enter GitHub username"/>
           <div className="search-svg"></div>
           </div>
         </div>

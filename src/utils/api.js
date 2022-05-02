@@ -17,16 +17,15 @@ export default class PostService {
   }
 
   static async getUserRepos(name) {
-    const response = await fetch(`https://api.github.com/users/${name}/repos`);
-    const data = response.json();
+    const response = await fetch(`https://api.github.com/users/${name}/repos?per_page=100&page=1`);
+    const data = await response.json();
     return data;
   }
 }
 
 export async function getUser(name) {
   const user = await PostService.getUserInfo(name);
-  const userRepos = await PostService.getUserRepos(name);
-  console.log(user);
+  const userRepos = await PostService.getUserRepos(name)
   console.log(userRepos);
   userInfo.name = user.name;
   userInfo.login = user.login;
