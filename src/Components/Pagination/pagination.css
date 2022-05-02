@@ -48,3 +48,12 @@
   fill: none;
   stroke: none;
 }
+
+@media (max-width: 390px) {
+  .pagination-repos {
+    display: none;
+  }
+  .pagination-page {
+    justify-content: center;  
+  } 
+}

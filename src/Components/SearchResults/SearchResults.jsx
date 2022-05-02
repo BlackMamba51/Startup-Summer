@@ -13,7 +13,12 @@ function SearchResults({ page, setPage, changePage, totalPages, currentRepos, fi
           <SearchInfo/>
           {userInfo.reposList.length === 0
           ? <EmptyRepos/>
-          : <SearchRepos firstRepo={firstRepo} currentRepos={currentRepos} totalPages={totalPages} setPage={setPage}  page={page} changePage={changePage}/>
+          : <SearchRepos firstRepo={firstRepo} 
+                        currentRepos={currentRepos} 
+                        totalPages={totalPages} 
+                        setPage={setPage}  
+                        page={page} 
+                        changePage={changePage}/>
           }
         </div>
       </div>

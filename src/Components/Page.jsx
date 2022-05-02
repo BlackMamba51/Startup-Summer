@@ -11,6 +11,8 @@ function Page() {
   const [totalPages, setTotalPages] = useState(0);
   const [perPage, setPerPage] = useState(4);
   const [firstRepo, setFirstRepo] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isFind, setIsFind] = useState(false);
 
   async function changePage(event) {
     const newFirstRepo = (event.selected * perPage) % userInfo.repos;
@@ -24,20 +26,21 @@ function Page() {
 
   async function search(event) {
     if (event.which === 13) {
-      event.preventDefault();
       setIsLoading(true);
       await getUser(event.target.value);
-      setTotalPages(getPageCount(userInfo.repos, perPage));
-      setCurrentRepos(userInfo.reposList.slice(firstRepo, firstRepo + perPage));
+      console.log(currentRepos);
+      event.preventDefault();
+      if (userInfo.status !== 404) {
+        setIsFind(true);
+        setTotalPages(getPageCount(userInfo.repos, perPage));
+        setFirstRepo(0);
+        setCurrentRepos(userInfo.reposList.slice(firstRepo, firstRepo + perPage));
+      } else {
+        setIsFind(false);
+      }
       setIsLoading(false);
-      console.log(userInfo);
-      setIsFind(true);
     }
   }
-
-
-  const [isLoading, setIsLoading] = useState(false);
-  const [isFind, setIsFind] = useState(false);
 
   return (
     <div>

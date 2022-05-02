@@ -89,3 +89,40 @@
   margin-top: 15px;
   line-height: 19px;
 }
+
+
+@media (max-width: 1220px) {
+  .user-repos {
+    width: 650px;
+  }
+  .user-avatar {
+    width: 240px;
+    height: 240px;
+  } 
+}
+
+@media (max-width: 980px) {
+  .user-repos {
+    width: 500px;
+  }
+  .user-avatar {
+    width: 200px;
+    height: 200px;
+  } 
+  .user-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 770px) {
+  .user-section__body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 610px) {
+  .user-repos {
+    width: 300px;
+  }
+}

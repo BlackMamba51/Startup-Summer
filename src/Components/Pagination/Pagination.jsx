@@ -15,7 +15,7 @@ function Pagination({ changePage, totalPages, firstRepo, currentRepos }) {
         breakLabel="..."
         nextLabel={<RightArrow/>}
         onPageChange={changePage}
-        pageRangeDisplayed={5}
+        pageRangeDisplayed={1}
         pageCount={getPageCount(userInfo.repos, 4)}
         previousLabel={<LeftArrow/>}
         pageClassName="pagination-btn"
