@@ -1,0 +1,13 @@
+.notfound {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notfound-svg {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  background-image: url('../../assets/svg/user.svg');
+  background-size: 100%;
+}

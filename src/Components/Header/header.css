@@ -1,0 +1,62 @@
+.header {
+  background-color: #0064EB;
+  padding: 16px 0;
+}
+.header__body {
+  display: flex;
+  align-items: center;
+}
+.github-logo {
+  width: 40px;
+  height: 40px;
+  background-image: url('../../assets/svg/github-icon.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.query-string {
+  position: relative;
+}
+.search-input {
+  padding-left: 40px;
+  margin-left: 30px;
+  width: 500px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1%;
+  color: #808080;
+}
+.search-svg {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../../assets/svg/search.svg');
+  background-size: 100%;
+}
+
+@media (max-width: 610px) {
+  .search-input {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .github-logo {
+    width: 30px;
+    height: 30px;
+  }
+  .search-input {
+    width: 300px;
+  }
+}
+@media (max-width: 390px) {
+  .github-logo {
+    display: none;
+  }
+  .search-input {
+    width: 280px;
+  }
+}

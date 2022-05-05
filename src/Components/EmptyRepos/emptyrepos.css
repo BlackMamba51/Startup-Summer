@@ -1,0 +1,14 @@
+.empty-repos {
+  width: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.empty-repos-svg {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  background-image: url('../../assets/svg/rep.svg');
+  background-size: 100%;
+}

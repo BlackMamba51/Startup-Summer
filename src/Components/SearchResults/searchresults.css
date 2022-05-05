@@ -1,0 +1,128 @@
+.user-section {
+  padding-top: 60px;
+}
+.user-section__body {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+.user-info {
+  max-width: 280px;
+}
+.flex-group {
+  display: flex;
+  align-items: center;
+}
+.user-avatar {
+  width: 280px;
+  height: 280px;
+}
+.user-avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.user-name {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.user-login {
+  font-size: 18px;
+  line-height: 22px;
+  color: #0064EB;
+  margin-top: 20px;
+}
+.user-subscribes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.user-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.followers-svg {
+  background-image: url('../../assets/svg/followers.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.following-svg {
+  background-image: url('../../assets/svg/following.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.user-repos {
+  width: 850px;
+}
+.repos-count {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.5px;
+}
+.repos-list {
+  width: 100%;
+}
+.repo-item {
+  width: 100%;
+  height: 120px;
+  margin-top: 30px;
+  background-color: #FFF;
+  border-radius: 6px;
+  padding: 15px;
+  transition: all .5s ease;
+}
+.repo-item:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 4px 10px #0064EB;
+}
+.repo-name {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0064EB;
+  line-height: 29px;
+}
+.repo-description {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 19px;
+}
+
+
+@media (max-width: 1220px) {
+  .user-repos {
+    width: 650px;
+  }
+  .user-avatar {
+    width: 240px;
+    height: 240px;
+  } 
+}
+
+@media (max-width: 980px) {
+  .user-repos {
+    width: 500px;
+  }
+  .user-avatar {
+    width: 200px;
+    height: 200px;
+  } 
+  .user-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 770px) {
+  .user-section__body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 610px) {
+  .user-repos {
+    width: 300px;
+  }
+}

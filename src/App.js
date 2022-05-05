@@ -1,10 +1,9 @@
-
+import Page from './Components/Page';
+import './styles/app.css'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Page/>
   );
 }
 

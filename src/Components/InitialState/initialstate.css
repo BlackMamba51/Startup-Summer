@@ -1,0 +1,17 @@
+.initial-state {
+  height: 90vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.initial-state__body {
+  max-width: 210px;
+}
+.big-search-svg {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  background-image: url('../../assets/svg/search.svg');
+  background-size: cover;
+}
